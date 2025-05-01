@@ -1,4 +1,4 @@
-// Function to fetch and display movies
+// Function to fetch and display cards
 async function fetchAndDisplayPhotoCards() {
   try {
     const response = await fetch("../assets/photos.json");
@@ -8,7 +8,7 @@ async function fetchAndDisplayPhotoCards() {
     // Parse JSON data
     const data = await response.json();
 
-    // Extract musicalMovies array
+    // Extract cards array
     const photoCards = data.photoCards;
 
     // Debugging log to verify data
@@ -18,22 +18,22 @@ async function fetchAndDisplayPhotoCards() {
     let storedCardDetails =
       JSON.parse(localStorage.getItem("photoDetails")) || {};
 
-    // Add new movies without deleting previous ones
+    // Add new card without deleting previous ones
     photoCards.forEach((photo) => {
       storedCardDetails[photo.title] = { image: photo.img };
     });
 
-    // Save updated movie details in localStorage
+    // Save updated cards details in localStorage
     localStorage.setItem("photoDetails", JSON.stringify(storedCardDetails));
 
-    // Call loadMovies with the fetched comedyMovies
+    // Call loadPhotos with the fetched photo cards
     loadPhotos(photoCards);
   } catch (error) {
     console.error("Failed to fetch photos:", error);
   }
 }
 
-// Function to generate movie cards dynamically
+// Function to generate cards dynamically
 function loadPhotos(photoCards) {
   const container = document.getElementById("photo-card-list");
   container.innerHTML = ""; // Clear existing content

@@ -8,27 +8,42 @@
     <title>Media Gallery</title>
     <link rel="stylesheet" href="./css/reset.min.css">
     <!-- <link rel="stylesheet" href="css/sanitize.css"> -->
-    <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
 
-    <nav id="main-nav"class="topnav">
-        <div class="logo">
-            <a href="index.html"><img src="./img/logo.svg" alt="logo"></a>
-            <h1><a href="index.html">Media Gallery</a></h1>
-        </div>
-        <div>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Upload</a></li>
-                <li><a href="#">Credits</a></li>
-                <li><a href="#">Info</a></li>
-            </ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md py-3">
+        <div class="container-fluid">
+            <!-- Logo and Brand Name -->
+            <div class="logo d-flex align-items-center"> <!--logo-->
+                <a href="index.html"><img src="./img/logo.svg" alt="logo"></a>
+                <h1><a href="index.html">Media Gallery</a></h1>
+            </div>
+    
+            <!-- Hamburger Menu Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Collapsible Menu Items -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="px-5" href="#">About</a></li>
+                    <li class="nav-item"><a class="px-5" href="#">Upload</a></li>
+                    <li class="nav-item"><a class="px-5" href="#">Credits</a></li>
+                    <li class="nav-item"><a class="px-5" href="#">Info</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
+    
     <section class="hero">
         <div class="hero-content">
             <h1>Explore The World</h1>
@@ -43,17 +58,22 @@
     </main>
 
 
-    <nav class="footer">
+    <nav class="footer d-flex flex-wrap justify-content-between align-items-center py-3 px-4">
         <div class="footer-item">
             <a href="index.html"><img src="img/logo.svg" alt="logo" class="footer-logo"></a>
         </div>
         <div class="footer-item">
             <p>&copy; 2025 Hailey Akinsola</p>
         </div>
-        <div class="footer-item">
-            <a href="mailto:haakin27@iastate.edu" class="link">Contact</a>
+        <div>
+            <a href="mailto:haakin27@iastate.edu" id="contact">Contact</a>
         </div>
     </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

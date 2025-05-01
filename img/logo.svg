@@ -3,7 +3,7 @@
     <title>logo</title>
     <g id="logo" stroke="none" stroke-width="1" fill="#none" fill-rule="evenodd">
         <circle id="Oval" fill="#f5f5f5" cx="40" cy="40" r="39"></circle>
-        <text id="Logo" font-family="Segoe UI, Tahoma, sans-serif" font-size="24" font-weight="700" letter-spacing="-0.15652176" fill="#2e3c25">
+        <text id="Logo" font-family="Segoe UI, Tahoma, sans-serif" font-size="24" font-weight="700" letter-spacing="-0.15652176" fill="#290736">
             <tspan x="13" y="48">Logo</tspan>
         </text>
     </g>
