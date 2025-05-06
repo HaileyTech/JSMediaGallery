@@ -96,5 +96,27 @@
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
             "modal": ""
         }
+    ],
+    "carousel": [
+        {
+          "img": "https://picsum.photos/1280/448/?image=368",
+          "title": "Nature Around the World!",
+          "description": "Browse through photos taken all over the world!"
+        },
+        {
+          "img": "https://picsum.photos/1280/448/?image=93",
+          "title": "Explore the Beauty of Earth",
+          "description": "Discover breathtaking scenes from every corner of the planet."
+        },
+        {
+          "img": "https://picsum.photos/1280/448/?image=33",
+          "title": "A Journey Through Nature",
+          "description": "Take a visual tour of the world’s most stunning natural wonders."
+        },
+        {
+          "img": "https://picsum.photos/1280/448/?image=37",
+          "title": "See the World Differently",
+          "description": "Let these images inspire awe, reflection, and a deeper connection with nature."
+        }
     ]
 }

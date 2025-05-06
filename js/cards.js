@@ -31,8 +31,8 @@ function loadPhotos(photoCards) {
     cardDiv.innerHTML = `
       <div class="card">
         <img style="border-top-left-radius: inherit; border-top-right-radius: inherit;" src="${img}" alt="${title}" />
-        <div class="card-content">
-          <h4 class="card-title">${title}</h4>
+        <div class="card-content ps-4 pe-4">
+          <h4 class="card-title mb-2">${title}</h4>
           <p class="card-text">${description}</p>
           <button data-modal="${modal}" class="card-more button">View</button>
           <button> </button>
