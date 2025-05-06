@@ -2,98 +2,98 @@
     "photoCards": [
         {
             "img" : "https://picsum.photos/id/10/200",
-            "title": "Title Here",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+            "title": "Forest Pathways",
+            "description": "Wander through lush green trails and discover the heart of the wilderness.",
             "modal": ""
         },
         {
             "img": "https://picsum.photos/id/12/200",
-            "title": "Title Here",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+            "title": "Seaside Breeze",
+            "description": "Waves kiss the shore as salty air stirs the soul.",
             "modal": ""
         },
         {
             "img": "https://picsum.photos/id/13/200",
-            "title": "Title Here",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+            "title": "Rocky Shorelines",
+            "description": "Waves crash against rugged rocks, shaping coastlines with timeless rhythm.",
             "modal": ""
         },
         {
-            "img": "https://picsum.photos/id/15/200",
-            "title": "Title Here",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+            "img": "https://picsum.photos/id/509/200",
+            "title": "Hidden Waterfall",
+            "description": "Tucked away in the woods, a cascading waterfall whispers serenity.",
             "modal": ""
         },
         {
             "img": "https://picsum.photos/id/28/200",
-            "title": "Title Here",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+            "title": "Mountain Lake",
+            "description": "Still water cradled by mountains reflects the sky's quiet breath.",
             "modal": ""
         },
         {
             "img": "https://picsum.photos/id/29/200",
-            "title": "Title Here",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+            "title": "Cloud-Covered Peaks",
+            "description": "Mountains peek through the clouds like dreams rising above the earth.",
             "modal": ""
         },
         {
             "img": "https://picsum.photos/id/46/200",
-            "title": "Title Here",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+            "title": "Desert Dunes",
+            "description": "Golden sand dunes roll like waves beneath the blazing sun.",
             "modal": ""
         },
         {
             "img": "https://picsum.photos/id/62/200",
-            "title": "Title Here",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+            "title": "Rolling Hills",
+            "description": "Gentle slopes stretch into the distance, offering peace in their rhythm.",
             "modal": ""
         },
         {
             "img": "https://picsum.photos/id/66/200",
-            "title": "Title Here",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+            "title": "Calm Before the Storm",
+            "description": "Dark clouds gather, painting the sky with the quiet drama of nature’s power.",
             "modal": ""
         },
         {
             "img": "https://picsum.photos/id/81/200",
-            "title": "Title Here",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+            "title": "Sunlit Forest Floor",
+            "description": "Beams of light break through the canopy, dancing on moss and leaves.",
             "modal": ""
         },
         {
-            "img": "https://picsum.photos/id/121/200",
-            "title": "Title Here",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+            "img": "https://picsum.photos/id/976/200",
+            "title": "Wildflower Bloom",
+            "description": "Fields of color burst to life with the arrival of spring.",
             "modal": ""
         },
         {
             "img": "https://picsum.photos/id/125/200",
-            "title": "Title Here",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+            "title": "Crystal Waters",
+            "description": "Clear streams reflect the calmness of untouched landscapes.",
             "modal": ""
         },
         {
             "img": "https://picsum.photos/id/128/200",
-            "title": "Title Here",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+            "title": "Tranquil Reflections",
+            "description": "Lakes so still they mirror the world, undisturbed and pure.",
             "modal": ""
         },
         {
             "img": "https://picsum.photos/id/136/200",
-            "title": "Title Here",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+            "title": "Canyon Echoes",
+            "description": "Massive cliffs whisper ancient stories shaped by wind and time.",
             "modal": ""
         },
         {
             "img": "https://picsum.photos/id/179/200",
-            "title": "Title Here",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+            "title": "Crashing Waves",
+            "description": "Strong winds disrupt the still water, causing large waves to crash against large rocks.",
             "modal": ""
         },
         {
             "img": "https://picsum.photos/id/184/200",
-            "title": "Title Here",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+            "title": "Golden Horizon",
+            "description": "The sky ignites in amber and gold as daylight melts into evening.",
             "modal": ""
         }
     ],
