@@ -118,6 +118,8 @@ nav ul li:hover { background-color: var(--dark-lt); }
   border-radius: 8px;
 } 
 
+.carousel p { font-size: 1.1em;}
+
 .carousel-icon {
   font-size: 40px;
   color: var(--dark);
@@ -127,12 +129,9 @@ nav ul li:hover { background-color: var(--dark-lt); }
 .carousel-icon:hover {
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
-  /* background-image: ; */
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  background-image: none;
-}
+.carousel-control-prev-icon, .carousel-control-next-icon { background-image: none; }
 
 /* Main */
 main {
