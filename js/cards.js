@@ -24,7 +24,7 @@ function loadPhotos(photoCards) {
 
   // Loop through json of photos
   photoCards.forEach((photo) => {
-    const { img, title, description, modal } = photo;
+    const { id, img, title, description, modal } = photo;
     const cardDiv = document.createElement("div");
 
     // Create card
@@ -32,14 +32,37 @@ function loadPhotos(photoCards) {
       <div class="card">
         <img style="border-top-left-radius: inherit; border-top-right-radius: inherit;" src="${img}" alt="${title}" />
         <div class="card-content ps-4 pe-4">
-          <h4 class="card-title mb-2">${title}</h4>
+          <h4 class="card-title mt-4 mb-2">${title}</h4>
           <p class="card-text">${description}</p>
-          <button data-modal="${modal}" class="card-more button">View</button>
-          <button> </button>
+          <button type="button" class="card-more button" data-bs-toggle="modal" data-bs-target="#${id}">View</button>
         </div>
-      </div><!--end .main-grid-item -->
+      </div>
+      <div class="modal fade" id="${id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="${img}" alt="${title}" />
+              <div class="eg-text">
+                <h3>${title}</h3>
+                <p>${description} ${modal}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     `;
-    //     <div id="09" class="modal">
+            //     <div class="modal-header">
+            //   <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            //   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            // </div>
+
+
+
+    //   <div id="09" class="modal">
     //   <div class="modal-content">
     //     <span class="close">&times;</span>
     // 		<div class="modal-body">

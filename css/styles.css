@@ -120,7 +120,14 @@ nav ul li:hover { background-color: var(--dark-lt); }
 
 .carousel-icon {
   font-size: 40px;
-  color: var(--dark)
+  color: var(--dark);
+  transition: 0.2s;
+}
+
+.carousel-icon:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  /* background-image: ; */
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -149,7 +156,6 @@ main {
 }
 .card-title {
   font-size: 1.5em;
-  margin: 1rem 0 0 0;
   text-transform: uppercase; /*--all caps text --*/
   align-self: flex-start; /*-- positions at beginning --*/
   color: var(--text);
@@ -158,7 +164,6 @@ main {
   font-size: 1em;
   line-height: 1.2;
   align-self: flex-start;
-  color: var(--text);
 }
 button.card-more {
   padding: 0.25em 1.8em;
@@ -166,18 +171,12 @@ button.card-more {
   border-radius: 200px;
   border: 2px solid var(--dark);
   font-size: 1em;
-  text-decoration: none;
-  cursor: pointer;
   text-transform: uppercase;
 }
 button.card-more, button.card-more:visited {
-  /* color: var(--prime); */
-  /* border: 1.5px solid var(--prime); */
   transition: all 250ms ease-in-out;
 }
 button.card-more:hover, button.card-more:active {
-  /* color: var(--accent); */
-  /* border-color: var(--accent); */
   background-color: var(--dark);
   color: var(--bg);
 }
@@ -190,6 +189,34 @@ button.card-more:hover, button.card-more:active {
   min-width: 22rem;
 }
 .card:hover { box-shadow: 0 1px 8px rgba(0,0,0,.5); }
+
+.modal {
+  --bs-modal-width: 400px;
+  background-color: rgba(10, 10, 10, .4);
+}
+.modal-content {
+   background-color: var(--bg);
+   margin: 1rem auto;
+   padding: 1em;
+   width: 92%;
+   border-radius: 8px;
+}
+
+.modal-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+
+.modal img {
+     border-radius: 8px;
+}
+.eg-text { align-self: center; }
+
+.eg-text h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
 
 /* Footer */
 .footer-item p {
@@ -224,5 +251,9 @@ button.card-more:hover, button.card-more:active {
 @media screen and (min-width: 768px) {
   #photo-card-list { grid-template-columns:repeat(3, 1fr); }
   .carousel { margin: 20px 25px; } 
+  .modal { --bs-modal-width: 900px; }
+  .modal h3 { font-size: 2.5em; }
+  .modal p { font-size: 1.2em; }
+  .modal-body {grid-template-columns: 7fr 5fr;}
 }
 @media screen and (min-width: 1080px) { #photo-card-list{grid-template-columns:repeat(4, 1fr);} }
