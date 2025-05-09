@@ -1,10 +1,12 @@
-// Determine if you're running locally or on GitHub Pages
-const basePath =
-  window.location.hostname === "localhost"
-    ? "../assets/photos.json" // Local path
-    : "/JSMediaGallery/assets/photos.json"; // GitHub Pages path
+const isMine =
+  window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1";
 
-fetch(basePath)
+const base = isMine
+  ? "assets/photos.json"
+  : "/JSMediaGallery/assets/photos.json";
+
+fetch(base)
   .then((response) => response.json())
   .then((photos) => {
     const selectedData = photos.carousel;

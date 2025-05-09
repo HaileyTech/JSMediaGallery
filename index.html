@@ -21,7 +21,7 @@
         <div class="container-fluid">
             <!-- Logo and Brand Name -->
             <div class="logo d-flex align-items-center">
-                <a href="index.html"><img src="/JSMediaGallery/assets/logo.svg" alt="logo"></a>
+                <a href="index.html"><img id="site-logo" alt="logo"></a>
                 <h2><a href="index.html">Media Gallery</a></h2>
             </div>
     
@@ -68,7 +68,7 @@
     <!-- Footer -->
     <nav class="footer d-flex flex-wrap justify-content-between align-items-center py-3 px-4">
         <div class="footer-item">
-            <a href="index.html"><img src="/JSMediaGallery/assets/logo.svg" alt="logo" class="footer-logo"></a>
+            <a href="index.html"><img alt="logo" class="footer-logo" id="footer-logo"></a>
         </div>
         <div class="footer-item">
             <p>&copy; 2025 Hailey Akinsola</p>
@@ -81,6 +81,27 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+
+    <script>
+        // Detect if running locally or on GitHub Pages
+        const logoPath =
+            window.location.hostname === "localhost" ||
+            window.location.hostname === "127.0.0.1" ||
+            window.location.protocol === "file:"
+                ? "assets/logo.svg"
+                : "/JSMediaGallery/assets/logo.svg";
+
+        // Set the logo path dynamically
+        const logoImg = document.getElementById("site-logo");
+        if (logoImg) {
+            logoImg.src = logoPath;
+        }
+        const footer = document.getElementById("footer-logo");
+        if (footer) {
+            footer.src = logoPath;
+        }
+    </script>
+
     <script src="./js/cards.js"></script> <!-- Photo cards-->
     <script src="./js/carousel.js"></script> <!-- Carousel-->
 
