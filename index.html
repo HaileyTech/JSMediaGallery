@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Gallery</title>
     <link rel="stylesheet" href="./css/reset.min.css">
-    <!-- <link rel="stylesheet" href="css/sanitize.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -21,7 +20,7 @@
     <nav class="navbar navbar-expand-md py-3">
         <div class="container-fluid">
             <!-- Logo and Brand Name -->
-            <div class="logo d-flex align-items-center"> <!--logo-->
+            <div class="logo d-flex align-items-center">
                 <a href="index.html"><img src="./img/logo.svg" alt="logo"></a>
                 <h2><a href="index.html">Media Gallery</a></h2>
             </div>
@@ -51,22 +50,22 @@
         <div class="carousel-inner rounded-4"></div>
     
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"><i class="bi carousel-icon bi-caret-left"></i></span>
+            <span aria-hidden="true"><i class="bi carousel-icon bi-caret-left-fill"></i></span>
             <span class="visually-hidden">Previous</span>
         </button>
     
-        <button class="carousel-control-next pe-5" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"><i class="bi carousel-icon bi-caret-right"></i></span>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span aria-hidden="true"><i class="bi carousel-icon bi-caret-right-fill"></i></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
     
-    <!-- Loading photo cards dynamically from JS -->
+    <!-- Photo Cards: Loaded dynamically from JS -->
     <main>
         <div id="photo-card-list"></div>
     </main>
 
-
+    <!-- Footer -->
     <nav class="footer d-flex flex-wrap justify-content-between align-items-center py-3 px-4">
         <div class="footer-item">
             <a href="index.html"><img src="img/logo.svg" alt="logo" class="footer-logo"></a>

@@ -49,7 +49,6 @@ nav {
   font-weight: bold;
 }
 
-/* Logo and Title */
 .logo { gap: 1rem; }
 
 .logo img {
@@ -70,11 +69,12 @@ nav {
 }
 .navbar-toggler-icon:hover { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(247, 173, 209)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 
-/* Overrriding Bootstrap */
+/*-- Overrriding Bootstrap --*/
 a {
   color: inherit;
   text-decoration: none;
 }
+
 a:hover, a:focus, a:active, a:visited {
   color: inherit; 
   text-decoration: none;
@@ -111,7 +111,7 @@ nav ul li:hover { background-color: var(--dark-lt); }
   object-fit: cover;
 }
 
-/* Darker background behind caption for better visibility */
+/*--- Darker background behind caption for better visibility ---*/
 .carousel-caption {
   background: rgba(0, 0, 0, 0.7);
   padding: 10px;
@@ -131,7 +131,14 @@ nav ul li:hover { background-color: var(--dark-lt); }
   color: white;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon { background-image: none; }
+/*-- Overriding bootstrap so only arrow icons are clickable --*/
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto !important;
+  height: auto !important;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 /* Main */
 main {
@@ -140,7 +147,7 @@ main {
   margin: 0 auto;
 }
 
-/*-- media card styles -- */
+/*-- Media Cards -- */
 #photo-card-list {
   display: grid;
   grid-template-rows: auto;
@@ -148,22 +155,26 @@ main {
   grid-gap: 2rem;
   margin: 2rem 2vw;
 }
+
 .card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .card-title {
   font-size: 1.5em;
-  text-transform: uppercase; /*--all caps text --*/
-  align-self: flex-start; /*-- positions at beginning --*/
+  text-transform: uppercase;
+  align-self: flex-start;
   color: var(--text);
 }
+
 .card-text {
   font-size: 1em;
   line-height: 1.2;
   align-self: flex-start;
 }
+
 button.card-more {
   padding: 0.25em 1.8em;
   margin: 1em auto;
@@ -172,9 +183,11 @@ button.card-more {
   font-size: 1em;
   text-transform: uppercase;
 }
+
 button.card-more, button.card-more:visited {
   transition: all 250ms ease-in-out;
 }
+
 button.card-more:hover, button.card-more:active {
   background-color: var(--dark);
   color: var(--bg);
@@ -187,12 +200,15 @@ button.card-more:hover, button.card-more:active {
   box-shadow: 0 3px 24px rgba(0,0,0,.25);
   min-width: 22rem;
 }
+
 .card:hover { box-shadow: 0 1px 8px rgba(0,0,0,.5); }
 
+/*-- Modal --*/
 .modal {
   --bs-modal-width: 400px;
   background-color: rgba(10, 10, 10, .4);
 }
+
 .modal-content {
    background-color: var(--bg);
    margin: 1rem auto;
@@ -207,9 +223,11 @@ button.card-more:hover, button.card-more:active {
   grid-gap: 2em;
 }
 
-.modal img {
-     border-radius: 8px;
-}
+body.modal-open { overflow: auto !important; } /* allow user to scroll on site when modal is open*/
+
+
+.modal img { border-radius: 8px; }
+
 .eg-text { align-self: center; }
 
 .eg-text h3 {
@@ -244,9 +262,11 @@ button.card-more:hover, button.card-more:active {
     gap: 5px;
   }
 }
+
 @media screen and (min-width: 550px) {
   #photo-card-list{grid-template-columns:repeat(2, 1fr);}
 }
+
 @media screen and (min-width: 768px) {
   #photo-card-list { grid-template-columns:repeat(3, 1fr); }
   .carousel { margin: 20px 25px; } 
@@ -255,4 +275,5 @@ button.card-more:hover, button.card-more:active {
   .modal p { font-size: 1.2em; }
   .modal-body {grid-template-columns: 7fr 5fr;}
 }
+
 @media screen and (min-width: 1080px) { #photo-card-list{grid-template-columns:repeat(4, 1fr);} }

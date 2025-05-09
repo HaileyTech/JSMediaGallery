@@ -37,6 +37,7 @@ function loadPhotos(photoCards) {
           <button type="button" class="card-more button" data-bs-toggle="modal" data-bs-target="#${id}">View</button>
         </div>
       </div>
+
       <div class="modal fade" id="${id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -53,27 +54,18 @@ function loadPhotos(photoCards) {
           </div>
         </div>
       </div>
-      
     `;
-            //     <div class="modal-header">
-            //   <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            //   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            // </div>
 
-
-
-    //   <div id="09" class="modal">
-    //   <div class="modal-content">
-    //     <span class="close">&times;</span>
-    // 		<div class="modal-body">
-    //       <img src="https://picsum.photos/800/450/?image=0" alt="example" />
-    // 			<div class="eg-text">
-    // 				<h3>Tea + Devices = Fun</h3>
-    // 				<p>I always keep a cup of tea next to my expensive electronics, just in case I need to ruin them quickly . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    // 			</div>
-    // 		</div><!--end .modal-body-->
-    //   </div><!--end .modal-content-->
-    // </div><!--end .modal-->
+    // Overriding Bootstrap to prevent the page from jumping to original position after closing a modal
+    var modals = document.querySelectorAll(".modal");
+    modals.forEach(function (modal) {
+      modal.addEventListener("hidden.bs.modal", function () {
+        var currentPosition = window.scrollY;
+        setTimeout(function () {
+          window.scrollTo(0, currentPosition);
+        }, 5);
+      });
+    });
 
     // Append new photo card
     container.appendChild(cardDiv);
