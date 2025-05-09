@@ -49,7 +49,10 @@ nav {
   font-weight: bold;
 }
 
-.logo { gap: 1rem; }
+.logo {
+   gap: 1rem; 
+   margin: 10px
+  }
 
 .logo img {
   height: 50px;
