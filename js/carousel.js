@@ -1,7 +1,13 @@
-fetch("/JSMediaGallery/assets/photos.json")
+// Determine if you're running locally or on GitHub Pages
+const basePath =
+  window.location.hostname === "localhost"
+    ? "../assets/photos.json" // Local path
+    : "/JSMediaGallery/assets/photos.json"; // GitHub Pages path
+
+fetch(basePath)
   .then((response) => response.json())
   .then((photos) => {
-    const selectedData = photos.carousel
+    const selectedData = photos.carousel;
     const carouselInner = document.querySelector(".carousel-inner");
     const carouselIndicators = document.querySelector(".carousel-indicators");
 

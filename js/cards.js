@@ -1,6 +1,12 @@
+// Determine if you're running locally or on GitHub Pages
+const basePath =
+  window.location.hostname === "localhost"
+    ? "../assets/photos.json" // Local path
+    : "/JSMediaGallery/assets/photos.json"; // GitHub Pages path
+
 async function loadPhotoCards() {
   try {
-    const response = await fetch("/JSMediaGallery/assets/photos.json");
+    const response = await fetch(basePath);
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
