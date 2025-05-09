@@ -1,4 +1,4 @@
-fetch("assets/photos.json")
+fetch("/JSMediaGallery/assets/photos.json")
   .then((response) => response.json())
   .then((photos) => {
     const selectedData = photos.carousel

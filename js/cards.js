@@ -1,6 +1,6 @@
 async function loadPhotoCards() {
   try {
-    const response = await fetch("assets/photos.json");
+    const response = await fetch("/JSMediaGallery/assets/photos.json");
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
